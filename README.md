@@ -1,4 +1,4 @@
-# my-portfolio
+# My Resume
 
 # Getting Started with Create React App
 
