@@ -6,7 +6,7 @@ function About() {
       <div className="container mx-auto flex flex-col md:flex-row items-center max-w-5xl p-4">
         <div className="flex-shrink-0 mb-10 md:mb-0 md:mr-10">
           <img
-            src="https://github.com/anmolsansi/my-portfolio/blob/main/src/components/image.jpeg" // Replace with the actual image URL
+            src={`${process.env.PUBLIC_URL}/image.jpeg`} // Accessing the image from the public folder
             alt="Profile"
             className="rounded-lg w-72 md:w-96 shadow-lg"
           />
