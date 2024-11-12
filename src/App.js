@@ -1,24 +1,43 @@
 import React from 'react';
-import Header from './components/Header';
+import ReactFullpage from '@fullpage/react-fullpage';
 import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
-import Contact from './components/Contact';
-import Education from './components/Education';
 import Projects from './components/Projects';
+import EducationContactFooter from './components/EducationContactFooter';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <About />
-      <Skills />
-      <Experience />
-      <Education />
-      <Projects />
-      <Contact />
-
-    </div>
+    <ReactFullpage
+      anchors={['about', 'skills', 'experience', 'projects', 'education', 'contact', 'footer']}
+      navigation
+      scrollingSpeed={2000}
+      render={() => {
+        return (
+          <ReactFullpage.Wrapper>
+            <div className="section" data-anchor="about">
+              <About />
+            </div>
+            <div className="section" data-anchor="skills">
+              <Skills />
+            </div>
+            <div className="section" data-anchor="experience">
+              <Experience />
+            </div>
+            <div className="section" data-anchor="projects">
+              <Projects />
+            </div>
+            <div className="section" data-anchor="education-contact-footer">
+              <EducationContactFooter />
+            </div>
+            {/* <div className="section" data-anchor="footer">
+              <Footer />
+            </div> */}
+          </ReactFullpage.Wrapper>
+        );
+      }}
+    />
   );
 }
 

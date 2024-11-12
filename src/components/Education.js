@@ -2,14 +2,19 @@ import React from 'react';
 
 function Education() {
   return (
-    <section id="education" className="bg-white text-gray-800 p-10">
-      <div className="container mx-auto text-center">
+    <div className="min-h-screen bg-white text-gray-800 flex items-center justify-center">
+      <div className="container mx-auto max-w-5xl p-4 text-center">
         <h2 className="text-3xl font-bold mb-4">Education</h2>
-        <h3 className="text-xl font-semibold">Illinois Institute of Technology, Chicago, USA</h3>
+        <p className="text-lg">Illinois Institute of Technology, Chicago</p>
         <p className="text-sm text-gray-600">Masters in Information Technology and Management</p>
-        <p className="text-sm text-gray-600">GPA: 4.0/4.0 | Graduated May 2024</p>
       </div>
-    </section>
+
+      <div className="container mx-auto max-w-5xl p-4 text-center">
+        <h2 className="text-3xl font-bold mb-4">Education</h2>
+        <p className="text-lg">Delhi Technological University, India</p>
+        <p className="text-sm text-gray-600">Bachelors of Technology in Electronics and Communicatio Engineering</p>
+      </div>
+    </div>
   );
 }
 
