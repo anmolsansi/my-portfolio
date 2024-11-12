@@ -12,7 +12,7 @@ function App() {
     <ReactFullpage
       anchors={['about', 'skills', 'experience', 'projects', 'education', 'contact', 'footer']}
       navigation
-      scrollingSpeed={2000}
+      scrollingSpeed={600}
       render={() => {
         return (
           <ReactFullpage.Wrapper>
